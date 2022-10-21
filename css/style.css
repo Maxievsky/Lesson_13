@@ -1,0 +1,246 @@
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+
+
+.rick-and-mrty {
+
+	background: url('../img/mesmerizing-view-silhouettes-trees-sunset-sky.jpg') 0 0/cover no-repeat;
+	position: relative;
+
+
+}
+.rick-and-mrty__boden {
+	background: url('../img/boden.png') 0 0/cover no-repeat;
+	max-width: 100%;
+	height: 1000px;
+	animation-name: rick-and-mrty__boden;
+	animation-duration: 10s;
+
+	animation-iteration-count: infinite;
+
+}
+@keyframes rick-and-mrty__boden {
+	0% {transform: translate(400%, 400%)scale(10);
+		
+	}
+	100% {
+		
+	}
+}
+
+.rick-and-mrty__comet {
+	position: absolute;
+	background: url('../img/planet-01.png') 0 0/100% auto no-repeat;
+	width: 100px;
+	height: 100px;
+	top: 10px;
+	left: 100px;
+	z-index: 1;
+	animation-name: rick-and-mrty__comet;
+	animation-duration: 10s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+
+
+}
+
+
+
+@keyframes rick-and-mrty__comet {
+	0% {
+	}
+	100% {
+		transform: translate(400%, 400%)scale(10);
+		
+	}
+}
+
+
+
+.rick-and-mrty__plate {
+	position: absolute;
+	background: url('../img/ship.png') 0 0/100% auto no-repeat;
+	width: 300px;
+	height: 250px;
+	top: 66px;
+	left: 400px;
+	z-index: 2;
+	transform: translate(200%, 100%)scale(0);
+	transition-duration: 10s;
+	animation-name: rick-and-mrty__boden;
+	animation-duration: 10s;
+	
+	animation-iteration-count: infinite;
+
+	
+
+
+}
+
+
+.rick-and-mrty__morty {}
+
+.rick-and-mrty__earth {
+	position: absolute;
+	background: url('../img/planet-03.png') 0 0/100% auto no-repeat;
+	width: 100px;
+	height: 100px;
+	top: 30px;
+	left: 400px;
+	z-index: 1;
+	
+	animation-name: rick-and-mrty__earth;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	
+
+
+}
+
+@keyframes rick-and-mrty__earth {
+	0% {
+		
+	}
+	100% {
+	transform: rotate(360deg);
+	
+
+	
+		
+	}
+}
+
+.rick-and-mrty__venus {}
+
+.rick-and-mrty__moon {
+	position: absolute;
+	background: url('../img/planet-08.png') 0 0/100% auto no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 80px;
+	left: 500px;
+	z-index: 1;
+	
+	animation-name: rick-and-mrty__moon;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	
+}
+
+
+@keyframes rick-and-mrty__moon {
+	0% {
+
+	}
+	100% {
+		transform: rotate(-360deg);
+		
+	}
+}
+
+
+
+.rick-and-mrty__stars {}
+
+.rick-and-mrty__saturn {
+	position: absolute;
+	background: url('../img/planet-07.png') 0 0/100% auto no-repeat;
+	width: 150px;
+	height: 150px;
+	top: 140px;
+	left: 750px;
+	z-index: 2;
+	
+	
+	
+	animation-name: rick-and-mrty__saturn;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+
+}
+
+@keyframes rick-and-mrty__saturn {
+	0% {
+		
+	}
+	100% {
+		transform: skew(5deg, 60deg);
+	}
+}
+
+.rick-and-mrty__sun {}
+
+.rick-and-mrty__rock {}
+
+.header{
+	margin: 30px 0 100px 30px;
+
+
+}
+.cartoon{
+	padding-left: 70px;
+	font-size: 48px;
+	font-weight: 900;
+	position: relative;
+	
+	
+
+}
+
+.cartoon::before {
+	content: "";
+	position: absolute;
+	background: url('../img/morty.png') 0 0/ cover no-repeat ;
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	transition: all 0.3s ease 1s;
+	opacity: 0;
+	
+
+}
+
+.cartoon:hover{
+	color: blueviolet;
+}
+
+.cartoon:hover::before{
+	opacity: 100%;
+
+
+}
+
+.cartoon__text{
+	margin: 30px;
+		padding-left: 70px;
+		font-size: 24px;
+		font-weight: 900;
+		position: relative;
+		text-align: center;
+	
+		animation: cartoon__text 1s ease;
+}
+
+@keyframes cartoon__text {
+	0% {
+		transform: translate(0px, 80%);
+		opacity: 0;
+		
+	}
+	100% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		
+	}
+}
